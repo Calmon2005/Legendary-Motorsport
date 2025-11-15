@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
     $saldo = 3000000.00;
 
-    $conexao = new mysqli('localhost', 'root', '', '', 3306);
+    $conexao = new mysqli('localhost', 'root', '', '', 3307);
 
     if ($conexao->connect_error) {
         die("Erro de conexão: " . $conexao->connect_error);
