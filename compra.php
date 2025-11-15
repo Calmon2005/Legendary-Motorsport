@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $compra = $saldo - $preco;
     $id = $_SESSION["usuario"]["id"];
     if ($saldo>=$preco) {
-        $conexao = new mysqli('localhost', 'root', '', 'motorsport', 3306);
+        $conexao = new mysqli('localhost', 'root', '', 'motorsport', 3307);
         $_SESSION["usuario"]["saldo"] = $compra;
         $sql = "UPDATE usuarios SET saldo = $compra WHERE id =$id";
         $conexao->query($sql);
