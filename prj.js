@@ -10,7 +10,7 @@ if (btnCadastro) {
 const btnCarros = document.getElementById('btnCarros');
 if (btnCarros) {
     btnCarros.addEventListener('click', () => {
-        window.location.href = "produtos.html"; 
+        window.location.href = "produto.php"; 
     });
 }
 
