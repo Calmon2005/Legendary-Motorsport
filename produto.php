@@ -37,6 +37,14 @@ session_start();
         <input type="hidden" name="prc" value="200000.00">
         <button type="submit">Comprar</button>
     </form>
+    
+    <form class="caixa" action="compra.php" method="POST">
+        <img class="imagestyle" src="igm\6765028_0_W_969e12f697.jpg" alt="porsche gts">
+        <h2>porsche gts</h2>
+        <p>R$ 500.000.00 </p>
+        <input type="hidden" name="prc" value="500000.00">
+        <button type="submit">Comprar</button>
+    </form>
 
 </form>
 
