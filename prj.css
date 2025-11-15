@@ -1,0 +1,289 @@
+  body {
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(to right, #0d0d0d, #1a001a);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(3px);
+            transition: all 0.6s ease;
+        }
+
+        /* ====== ÁREA INICIAL ====== */
+        #inicio {
+            text-align: center;
+            animation: fadeIn 1s ease;
+            display: flex; /* 👈 mantém a centralização */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 0.6s ease;
+        }
+
+        #inicio h1 {
+            font-size: 40px;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        #inicio p {
+            font-size: 18px;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        #btnCadastro {
+            background: linear-gradient(to right, #8a2be2, #ffcc00);
+            color: #000;
+            font-weight: bold;
+            border: none;
+            padding: 15px 35px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #btnCadastro:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 12px #ffcc00;
+        }
+       
+        #btnCarros {
+    background: linear-gradient(to right, #8a2be2, #ffcc00);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+#btnCarros:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ffcc00;
+}
+
+
+            /* ====== ÁREA DE CADASTRO ====== */
+        #cadastro {
+            position: relative; /* importante pra o botão ficar dentro dessa área */
+        }
+
+            #vlt {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+
+        background: linear-gradient(to right, #8a2be2, #ffcc00);
+        color: #000;
+        font-weight: bold;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 1000; /* garante que fique por cima de tudo */
+    }
+
+    #vlt:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 12px #ffcc00;
+    }
+        
+        
+        #cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+    min-height: 100vh;
+}
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #8a2be2;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        input {
+            padding: 12px;
+            font-size: 1em;
+            border: 1px solid #8a2be2;
+            border-radius: 5px;
+            margin-top: 5px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #ffcc00;
+            box-shadow: 0 0 8px #ffcc00;
+        }
+
+        button[type="submit"] {
+            margin-top: 25px;
+            padding: 12px;
+            font-size: 1em;
+            background: linear-gradient(to right, #8a2be2, #ffcc00);
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 500px) {
+            .form-container {
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+            
+footer:hover {
+    opacity: 1;
+    color: #ffcc00;
+}
+        }
+        
+        
+        /* PRODUTOS*/
+        
+        #carros {
+            position: relative; /* importante pra o botão ficar dentro dessa área */
+        }
+
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #8a2be2;
+        }
+
+
+        h2 {
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #ccc;
+        }
+
+
+        button[type="submit"] {
+            margin-top: 25px;
+            padding: 12px;
+            font-size: 1em;
+            background: linear-gradient(to right, #8a2be2, #ffcc00);
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #ffcc00;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 500px) {
+            .form-container {
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+            
+footer:hover {
+    opacity: 1;
+    color: #ffcc00;
+}
+        }
+        .imagestyle{
+
+    max-width:250px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+        
+        .caixa {
+        background-color: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #8a2be2;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
