@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Legendary Motorsport</title>
+    <link rel="stylesheet" href="prj.css">
+</head>
+<body>
+
+    <section id="cadastro">
+        <div>
+
+            <form class="form-container" action="prjo.php" method="POST">
+                <h2>Cadastro</h2>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" pattern="\d{11}" title="Digite 11 números" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Crie uma senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" pattern="\d{11}" title="Ex: 11999999999" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <button id="vlt" onclick="window.location.href='prj.html'">⭠ Voltar</button>
+
+        </div>
+    </section>
+<script src="prj.js"></script>
+</body>
+</html>
