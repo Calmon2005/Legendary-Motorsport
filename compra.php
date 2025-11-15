@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $saldo = $_SESSION["usuario"]["saldo"];
     $compra = $saldo - $preco;
     $id = $_SESSION["usuario"]["id"];
-if ($saldo<$preco) {
+if ($saldo>$preco) {
 $conexao = new mysqli('localhost', 'root', '', 'motorsport', 3307);
 
     if ($conexao->connect_error) {
@@ -13,8 +13,10 @@ $conexao = new mysqli('localhost', 'root', '', 'motorsport', 3307);
     }
 $_SESSION["usuario"]["saldo"] = $compra;
 $sql = "UPDATE usuarios SET saldo = $compra WHERE id =$id";
+$conexao->query($sql);
 }
 else {
     echo "<script>alert('Saldo insuficiente!');</script>";
 }
 }
+?>
