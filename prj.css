@@ -273,10 +273,11 @@
 
   .imagestyle {
 
-      max-width: 250px;
+      max-width: 270px;
       max-height: 250px;
       object-fit: cover;
       aspect-ratio: 16 / 9;
+      border-radius: 8px;
   }
 
 
