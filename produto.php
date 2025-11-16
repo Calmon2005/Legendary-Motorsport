@@ -16,7 +16,7 @@ include "carros.php"; // agora você tem $carros aqui
 
 
 <div>
-    <div class="box-container">
+    <div class="header-container">
         <h1>Carros Disponíveis</h1>
         <h2>Saldo autual: R$ <?php echo number_format($_SESSION["usuario"]["saldo"], 2, ',', '.')?></h2>
     </div>
