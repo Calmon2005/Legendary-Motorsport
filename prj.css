@@ -285,7 +285,6 @@
       background-color: rgba(0, 0, 0, 0.85);
       padding: 40px;
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(255, 255, 0, 0.3);
       width: 100%;
       max-width: 600px;
       border: 2px solid #8a2be2;
@@ -293,6 +292,12 @@
       align-items: center;
       align-content: center;
       justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+    .caixa:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #ffcc00;
   }
 
   .box-container{
