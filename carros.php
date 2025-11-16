@@ -21,9 +21,9 @@ $carros = [
         "img" => "igm/granturismo-folgore.webp"
     ],
     [
-        "nome" => "Porsche Macan",
-        "preco" => 700000.00,
-        "img" => "igm/granturismo-folgore.webp"
+        "nome" => "Porsche 911",
+        "preco" => 1200000.00,
+        "img" => "igm/foto-Album-de-PORSCHE-911-A30158-6840f6c641f11.jpeg"
     ]
 ];
 ?>
