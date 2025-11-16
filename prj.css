@@ -48,6 +48,7 @@
       border-radius: 10px;
       cursor: pointer;
       transition: all 0.3s ease;
+    min-width: 250px;
   }
 
   #btnCadastro:hover {
@@ -66,6 +67,7 @@
       cursor: pointer;
       transition: all 0.3s ease;
       margin-top: 10px;
+      min-width: 250px;
   }
 
   #btnCarros:hover {
@@ -168,6 +170,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: all 0.3s ease;
+      min-width: 250px;
   }
 
   button[type="submit"]:hover {
@@ -241,24 +244,6 @@
   }
 
 
-  button[type="submit"] {
-      margin-top: 25px;
-      padding: 12px;
-      font-size: 1em;
-      background: linear-gradient(to right, #8a2be2, #ffcc00);
-      color: #000;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-  }
-
-  button[type="submit"]:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 10px #ffcc00;
-  }
-
   @keyframes fadeIn {
       from {
           opacity: 0;
@@ -291,6 +276,7 @@
       max-width: 250px;
       max-height: 250px;
       object-fit: cover;
+      aspect-ratio: 16 / 9;
   }
 
 
@@ -305,4 +291,9 @@
       align-items: center;
       align-content: center;
       justify-content: center;
+  }
+
+  .box-container{
+    display: flex;
+    gap: 40px;
   }
