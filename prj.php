@@ -16,6 +16,7 @@ session_start();
     <section id="inicio">
         <h1>Legendary Motorsport</h1>
         <p>Os veículos mais lendários do mundo estão aqui.</p>
+        <br></br>
         <h2>Bem vindo(a), <?php echo $_SESSION["usuario"]["nome"]; ?></h2>
         <h2>R$ <?php echo number_format($_SESSION["usuario"]["saldo"], 2, ',', '.'); ?></h2>
         <button id="btnCadastro">Ir para o Cadastro</button>
