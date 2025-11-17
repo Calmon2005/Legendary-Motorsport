@@ -24,6 +24,11 @@ $carros = [
         "nome" => "Porsche 911",
         "preco" => 1200000.00,
         "img" => "igm/foto-Album-de-PORSCHE-911-A30158-6840f6c641f11.jpeg"
-    ]
+    ],
+    [
+        "nome" => "Ferrari SF90 Stradale",
+        "preco" => 1300000.00,
+        "img" => "img/FERRARI-812-GTS-DIANTEIRA-ESQUERDA.webp"
+    ],
 ];
 ?>
